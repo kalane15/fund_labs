@@ -18,6 +18,10 @@
 #define ld long double
 #define uint unsigned int
 
+
+int Add(int a, int b);
+int Subtract(int a, int b);
+
 typedef enum kErrors {
 	SUCCESS = 0,
 	INC_ARGS,
@@ -27,9 +31,10 @@ typedef enum kErrors {
 
 char IntToChar(int a) {
 	if (a < 10) {
-		return '0' + a;
-	} else {
-		return 'A' + a - 10;
+		return Add('0', a);
+	}
+	else {
+		return Subtract(Add('A', a), 10);
 	}
 }
 
@@ -40,6 +45,20 @@ int Increment(int a) {
 	else {
 		return Increment(a >> 1) << 1;
 	}
+}
+
+int Add(int a, int b) {
+	while (b != 0) {
+		int in_memory = a & b;
+		a = a ^ b;
+		b = in_memory << 1;
+	}
+	return a;
+}
+
+int Subtract(int a, int b) {
+	int neg_b = Add(~b, 1);
+	return Add(a, neg_b);
 }
 
 bool CheckErrors(kErrors status) {
@@ -77,7 +96,7 @@ kErrors ConvertTo2SS(ll number, int r, char* out) {
 
 	int base = 1 << r;
 	int ost;
-	
+
 	int o = 0;
 	for (int i = 0; i < r; i = Increment(i)) {
 		o = o | (1 << i);
@@ -102,9 +121,9 @@ int main() {
 	char* res = (char*)malloc(1024);
 	if (res == NULL) {
 		return MEM_ALLOC_ERR;
-	} 
+	}
 
-	kErrors status = ConvertTo2SS(58, 2, res);
+	kErrors status = ConvertTo2SS(52, 2, res);
 	if (CheckErrors(status)) {
 		printf("%s\n", res);
 	}
