@@ -1,0 +1,5 @@
+﻿  task2.cpp
+D:\univer\LAB3\task2\task2.cpp(47,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\univer\LAB3\task2\task2.cpp(58,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\univer\LAB3\task2\task2.cpp(159,1): warning C4715: FindMax: значение возвращается не при всех путях выполнения
+  task2.vcxproj -> D:\univer\LAB3\x64\Debug\task2.exe
