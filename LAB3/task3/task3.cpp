@@ -15,7 +15,8 @@
 #include "stdio.h"
 #include "myerrors.h"
 #include "string.h"
-
+#include "windows.h"
+#define uint unsigned int;
  
 
 typedef enum kOpts {
@@ -24,20 +25,18 @@ typedef enum kOpts {
 } kOpts;
 
 typedef struct Employee {
-	uint id;
+	unsigned int id;
 	char* name;
 	char* surname;
 	double salary;
 } Employee;
 
-kErrors ParseInput(int argc, char** args, kOpts* opt, char** file_name) {
-	if (argc != 3) {
-		printf("Incorrect number of arguments\n");
+kErrors ParseInput(int argc, char** args, kOpts* opt, char** file_name1, char** file_name2) {
+	if (argc != 4) {
 		return INC_NUM_OF_ARGS;
 	}
 
 	if (strlen(args[2]) != 2) {
-		printf("Incorrect flag\n");
 		return INC_FLAG;
 	}
 
@@ -52,15 +51,30 @@ kErrors ParseInput(int argc, char** args, kOpts* opt, char** file_name) {
 			*opt = DESCENDING_ORDER;
 			break;
 		default:
-			printf("Incorrect flag\n");
 			return INC_FLAG;
 		}
 	}
 	else {
-		printf("Incorrect flag\n");
 		return INC_FLAG;
 	}
-	*file_name = args[1];
+
+	char path1[1024];
+	char path2[1024];
+	*file_name1 = args[1];
+	*file_name2 = args[3];
+
+	int status = GetFullPathNameA(*file_name1, 1024, path1, NULL);
+	if (status == 1024 || status == 0) {
+		return INC_PATH;
+	}
+	status = GetFullPathNameA(*file_name2, 1024, path2, NULL);
+	if (status == 1024 || status == 0) {
+		return INC_PATH;
+	}
+
+	if (strcmp(path1, path2) == 0) {
+		return INC_PATH;
+	}
 	return SUCCESS;
 }
 
@@ -159,9 +173,9 @@ int comparator(const void* a, const void* b) {
 	return 0;
 }
 
-void PrintEmployees(Employee* employees, int size) {
+void PrintEmployees(FILE* out, Employee* employees, int size) {
 	for (int i = 0; i < size; i++) {
-		printf("%u %s %s %lf\n", employees[i].id, employees[i].name, employees[i].surname, employees[i].salary);
+		fprintf(out, "%u %s %s %lf\n", employees[i].id, employees[i].name, employees[i].surname, employees[i].salary);
 	}
 }
 
@@ -179,7 +193,8 @@ int main(int argc, char** args)
 	int start_size = 1;
 	kOpts opt;
 	char* inp_file;
-	kErrors status = ParseInput(argc, args, &opt, &inp_file);
+	char* out_file;
+	kErrors status = ParseInput(argc, args, &opt, &inp_file, &out_file);
 	if (status != 0) {
 		return ProccessError(status);
 	}
@@ -193,16 +208,21 @@ int main(int argc, char** args)
 	status = GetInfo(&employees, inp_file, &size, start_size);
 	if (status != SUCCESS) {
 		return ProccessError(status);
-	}
-
-	
+	}	
 	qsort(employees, size, sizeof(Employee), comparator);
 
 	if (opt == DESCENDING_ORDER) {
 		ReverseArray(employees, size);
 	}
 
-	PrintEmployees(employees, size);
+	FILE* out = fopen(out_file, "w");
+
+	if (out == NULL) {
+		return ProccessError(INC_FILE);
+	}
+
+	PrintEmployees(out, employees, size);
 	ClearEmloyees(employees, size);
+	fclose(out);
 }
 

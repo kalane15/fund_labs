@@ -226,6 +226,31 @@ bool ScanMail(Mail* m) {
 	char* time_get_s = (char*)malloc(BUFFER_SIZE);
 	char* temp = (char*)malloc(BUFFER_SIZE);
 
+
+	if (!city_s || !street_s || !building_s || !index_s || !post_id_s || !time_created_s || !temp) {
+		if (city_s) {
+			free(city_s);
+		}
+		if (street_s) {
+			free(street_s);
+		}
+		if (building_s) {
+			free(building_s);
+		}
+		if (index_s) {
+			free(index_s);
+		}
+		if (post_id_s) {
+			free(post_id_s);
+		}
+		if (time_created_s) {
+			free(time_created_s);
+		}
+		if (temp) {
+			free(temp);
+		}
+	}
+
 	strcpy(city_s, "");
 	strcpy(street_s, "");
 	strcpy(building_s, "");
@@ -271,7 +296,8 @@ bool ScanMail(Mail* m) {
 	string time_created = string_create(time_created_s);
 	string time_get = string_create(time_get_s);
 
-	return CreateMail(city, street, house, building, apartment, index, post_id, weight, time_created, time_get, m);	
+	bool status = CreateMail(city, street, house, building, apartment, index, post_id, weight, time_created, time_get, m);	
+	return status;
 }
 
 struct tm* ConvertToTm(string time) {
@@ -286,4 +312,17 @@ struct tm* ConvertToTm(string time) {
 	out.tm_sec = s;
 	out.tm_isdst = -1;
 	return &out;
+}
+
+void DestroyMails(Mail* mails, int size) {
+	for (int i = 0; i < size; i++) {
+		string_destroy(&mails[i].post_id);
+		string_destroy(&mails[i].time_created);
+		string_destroy(&mails[i].time_get);
+		string_destroy(&mails[i].address.building);
+		string_destroy(&mails[i].address.city);
+		string_destroy(&mails[i].address.index);
+		string_destroy(&mails[i].address.street);
+	}
+	free(mails);
 }

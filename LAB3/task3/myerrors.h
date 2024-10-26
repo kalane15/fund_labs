@@ -7,6 +7,7 @@ typedef enum kErrors {
 	INC_NUM_OF_ARGS,
 	INC_FLAG,
 	INC_FILE,
-	INC_INP_DATA
+	INC_INP_DATA,
+	INC_PATH
 } kErrors;
 kErrors ProccessError(kErrors error);

@@ -15,19 +15,15 @@
 #include "stdio.h"
 
 #include "vector.h"
+#include "myerrors.h"
 
 #define ll long long
 #define ull unsigned long long
 #define ld long double
 #define uint unsigned int
 
-typedef enum kErrors {
-	SUCCESS = 0,
-	INC_ARGS,
-	ERR_OVERFLOW,
-	MEM_ALLOC_ERR,
-	INC_NUM_ARGS
-} kErrors;
+
+
 
 
 void MultiplyMatrixVector(int dimensions, double* matrix, vector* v, vector* out) {
@@ -123,7 +119,7 @@ kErrors FindMax(int n, kErrors (*n1)(vector*, int, double*), kErrors (*n2)(vecto
 	}
 	
 	if (count <= 0) {
-		return INC_NUM_ARGS;
+		return INC_NUM_OF_ARGS;
 	}
 
 	vector** vectors = (vector**)malloc(sizeof(vector) * count);
@@ -143,19 +139,24 @@ kErrors FindMax(int n, kErrors (*n1)(vector*, int, double*), kErrors (*n2)(vecto
 	va_end(arg);
 	kErrors status = FinddMaxForN(n, n1, count, n1_out, vectors);
 	if (status != SUCCESS) {
+		free(vectors);
 		return status;
 	}
 
 
 	status = FinddMaxForN(n, n2, count, n2_out, vectors);
 	if (status != SUCCESS) {
+		free(vectors);
 		return status;
 	}
 	
 	status = FinddMaxForN(n, n3, count, n3_out, vectors);
 	if (status != SUCCESS) {
+		free(vectors);
 		return status;
 	}
+	free(vectors);
+	return SUCCESS;
 }
 
 
@@ -181,7 +182,13 @@ int main()
 	vector_create(&v1, n_dimensions, 0.0, 2.0, 0.0);
 	vector_create(&v2, n_dimensions, 3.0, sqrt(3.0), 0.0);
 	vector_create(&v3, n_dimensions, 2.0, 2.0, 2.0);
-	FindMax(3, norma1, norma2, norma3, out1, out2, out3, n_dimensions, &v1, &v2, &v3);
+	kErrors status = FindMax(3, norma1, norma2, norma3, out1, out2, out3, n_dimensions, &v1, &v2, &v3);
+	if (status != SUCCESS) {
+		free(out1);
+		free(out2);
+		free(out3);
+		return ProccessError(status);
+	}
 
 	printf("Norma 1\n");
 	for (int i = 0; i < n_dimensions; i++) {
@@ -197,4 +204,10 @@ int main()
 	for (int i = 0; i < n_dimensions; i++) {
 		vector_print(out3[i]);
 	}
+	free(out1);
+	free(out2);
+	free(out3);
+	vector_destroy(&v1);
+	vector_destroy(&v2);
+	vector_destroy(&v3);
 }

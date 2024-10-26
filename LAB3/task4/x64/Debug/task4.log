@@ -1,1 +1,12 @@
-﻿  task4.vcxproj -> D:\univer\LAB3\x64\Debug\task4.exe
+﻿  task4.c
+D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(110,61): warning C4090: функция: разные квалификаторы "const"
+D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(110,61): warning C4113: "int (__cdecl *)(void *,void *)" отличается в списках параметров от "_CoreCrtNonSecureSearchSortCompareFunction"
+D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(124,61): warning C4090: функция: разные квалификаторы "const"
+D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(124,61): warning C4113: "int (__cdecl *)(void *,void *)" отличается в списках параметров от "_CoreCrtNonSecureSearchSortCompareFunction"
+D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(140,13): warning C4101: nM: неиспользованная локальная переменная
+D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(140,17): warning C4101: ny: неиспользованная локальная переменная
+D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(140,29): warning C4101: ns: неиспользованная локальная переменная
+D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(140,9): warning C4101: nd: неиспользованная локальная переменная
+D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(140,25): warning C4101: nm: неиспользованная локальная переменная
+D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(140,21): warning C4101: nh: неиспользованная локальная переменная
+  task4.vcxproj -> D:\univer\fund_labs\fund_labs\LAB3\x64\Debug\task4.exe

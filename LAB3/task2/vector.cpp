@@ -34,6 +34,7 @@ bool vector_create(vector* v, int count, ...) {
 	}
 	v->dimensions = count;
 	va_end(arg);
+	return true;
 }
 
 bool vector_create_zero(vector* v, int count) {
@@ -47,6 +48,7 @@ bool vector_create_zero(vector* v, int count) {
 		v->coordinates[i] = 0.0;
 	}
 	v->dimensions = count;
+	return true;
 }
 
 void vector_print(vector* v) {

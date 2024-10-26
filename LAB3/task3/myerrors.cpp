@@ -39,6 +39,9 @@ kErrors ProccessError(kErrors error) {
 		case INC_INP_DATA:
 			printf("Incorrect input data\n");
 			break;
+		case INC_PATH:
+			printf("Incorrect path");
+			break;
 	}
 	return error;
 }

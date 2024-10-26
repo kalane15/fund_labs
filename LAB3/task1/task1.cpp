@@ -22,6 +22,25 @@
 int Add(int a, int b);
 int Subtract(int a, int b);
 
+char* strrev(char* str)
+{
+	if (!str || !*str)
+		return str;
+
+	int i = strlen(str) - 1, j = 0;
+
+	char ch;
+	while (i > j)
+	{
+		ch = str[i];
+		str[i] = str[j];
+		str[j] = ch;
+		i--;
+		j++;
+	}
+	return str;
+}
+
 typedef enum kErrors {
 	SUCCESS = 0,
 	INC_ARGS,
@@ -113,7 +132,7 @@ kErrors ConvertTo2SS(ll number, int r, char* out) {
 		i = Increment(i);
 	}
 	out[i] = '\0';
-	_strrev(out);
+	strrev(out);
 	return SUCCESS;
 }
 
@@ -127,4 +146,5 @@ int main() {
 	if (CheckErrors(status)) {
 		printf("%s\n", res);
 	}
+	free(res);
 }

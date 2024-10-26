@@ -35,7 +35,7 @@ kErrors ProccessFlag(char flag, Post* post) {
     switch (flag) {
     case 'g':
         printf("Введите идентификатор:\n");
-        char* id = (char*)malloc(16);
+        char* id = (char*)malloc(17);
         if (id == NULL) {
             return MEM_ALLOC_ERR;
         }
@@ -44,7 +44,6 @@ kErrors ProccessFlag(char flag, Post* post) {
         s = string_create(id);
         if (!ValidatePostId(s)) {
             printf("Некорректный идентификатор\n");
-            free(id);
             return INC_INP_DATA;
         }
 
@@ -55,9 +54,8 @@ kErrors ProccessFlag(char flag, Post* post) {
         else {
             PrintMail(m);
         }
-        free(id);
         break;
-    case 'a':
+    case 'a': 
         printf("Введите данные посылки:\n");
         Mail m_a;
         if (!ScanMail(&m_a)) {
@@ -123,8 +121,13 @@ kErrors ProccessFlag(char flag, Post* post) {
                 }
             }
         }
+        string_destroy(&t);
         qsort(post->mails, post->mail_amount, sizeof(Mail), MailComparatorBase);
+        break;
+    default:
+        return INC_FLAG;
     }
+    return SUCCESS;
 }
 
 
@@ -166,7 +169,13 @@ int main()
         if (count != 1) {
             printf("Incorrect flag\n");
         }
-        ProccessFlag(c, &post);       
+        kErrors status = ProccessFlag(c, &post);
+        if (status != INC_INP_DATA && status != SUCCESS && status != INC_FLAG) {
+            //DestroyMails(post.mails, post.mail_amount);
+            return ProccessError(status);
+        }
     }
+    //DestroyMails(post.mails, post.mail_amount);
+    return 0;
 }
 
