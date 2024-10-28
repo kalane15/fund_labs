@@ -49,7 +49,7 @@ kErrors norma1(vector* v, int dimensions, double* out) {
 
 kErrors norma2(vector* v, int dimensions, double* out) {	
 	double a = 0.0; //overflow?
-	const int p = 2;
+	const int p = 3;
 
 	for (int i = 0; i < v->dimensions; i++) {
 		a += pow(v->coordinates[i], p);
@@ -60,8 +60,21 @@ kErrors norma2(vector* v, int dimensions, double* out) {
 	return SUCCESS;
 }
 
+void GenerateMatrix(double* out, int dimensions) {
+	for (int i = 0; i < dimensions; i++) {
+		for (int j = 0; j < dimensions; j++) {
+			out[i * dimensions + j] = i == j ? 1.0 : 0.0;
+		}
+	}
+}
+
 kErrors norma3(vector* v, int dimensions, double* out){
-	double a[9] = { 0, 3, 1, 3, 2, 3, 1, 1, 1 };
+	double* a = (double*)malloc(dimensions * dimensions * sizeof(double));
+	if (a == NULL) {
+		return MEM_ALLOC_ERR;
+	}
+	GenerateMatrix(a, dimensions);
+
 
 	vector temp;
 	vector_create_zero(&temp, dimensions);
@@ -76,6 +89,7 @@ kErrors norma3(vector* v, int dimensions, double* out){
 	*out = res;
 
 	vector_destroy(&temp);
+	free(a);
 	return SUCCESS;
 }
 
@@ -127,7 +141,7 @@ kErrors FindMax(int n, kErrors (*n1)(vector*, int, double*), kErrors (*n2)(vecto
 		return MEM_ALLOC_ERR;
 	}
 
-	double max = -1e300;
+	double max = -1.0;
 
 	va_list arg;
 	va_start(arg, count);
@@ -210,4 +224,5 @@ int main()
 	vector_destroy(&v1);
 	vector_destroy(&v2);
 	vector_destroy(&v3);
+	return 0;
 }

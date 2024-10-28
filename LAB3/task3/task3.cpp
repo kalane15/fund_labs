@@ -118,7 +118,6 @@ kErrors GetInfo(Employee** employees, char* filename, int* size, int start_size)
 		if (count != 4) {
 			free(cur.surname);
 			free(cur.name);
-			cur.name = (char*)malloc(1024);
 			ClearEmloyees(*employees, i);			
 			fclose(file);
 			return INC_INP_DATA;

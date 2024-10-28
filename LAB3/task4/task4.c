@@ -98,19 +98,22 @@ kErrors ProccessFlag(char flag, Post* post) {
         }
         for (int i = 0; i < post->mail_amount; i++) {
             PrintMail(&(post->mails[i]));
-            printf("\n");
         }
         break;
     case 't':
         time_t mytime = time(NULL);
         struct tm* now = localtime(&mytime);
         struct tm cur;
+        if (post->mail_amount == 0) {
+            printf("Нет добавленных посылок\n");
+            break;
+        }
         string t = string_create("-1");
 
         qsort(post->mails, post->mail_amount, sizeof(Mail), MailComparatorByCreationTime);
         for (int i = 0; i < post->mail_amount; i++) {
             if (string_comp(&(post->mails[i].post_id), &t) != 0) {
-                cur = *ConvertToTm(post->mails[i].time_get);
+                cur = *(ConvertToTm(post->mails[i].time_get));
 
                 PrintMail(&(post->mails[i]));                
                 if (difftime(mktime(now), mktime(&cur)) > 0) {
@@ -121,8 +124,10 @@ kErrors ProccessFlag(char flag, Post* post) {
                 }
             }
         }
-        string_destroy(&t);
         qsort(post->mails, post->mail_amount, sizeof(Mail), MailComparatorBase);
+        break;
+    case 's':
+        printf("Остановка программы\n");
         break;
     default:
         return INC_FLAG;
@@ -130,9 +135,10 @@ kErrors ProccessFlag(char flag, Post* post) {
     return SUCCESS;
 }
 
-
-void strings_demo() {
-
+void ClearBuffer(void)
+{
+    char c;
+    while (getchar() != '\n' && getchar != EOF);
 }
 
 int main()
@@ -152,6 +158,12 @@ int main()
     post.mail_amount = 0;
     post.mail_buf_size = start_buf_size;
     post.mails = (Mail*)malloc(sizeof(Mail) * start_buf_size);
+
+    /*string s = string_create("-1");
+    for (int i = 0; i < start_buf_size; i++) {
+        post.mails[i].post_id = s;
+    }*/
+
     if (post.mails == NULL) {
         return MEM_ALLOC_ERR;
     }
@@ -161,20 +173,34 @@ int main()
     PrintAddress(&(post.post_address));
     printf("\n");
     char c = '0';
-    while (c != 's') {
-        int count = scanf("%c", &c);
-        if (c == '\n') {
+    char cn;
+    while (!(c == 's' && cn == '\n')) {
+        int count = fscanf(stdin, "%c", &c);
+        count += fscanf(stdin, "%c", &cn);
+        if (cn != '\n') {
+            printf("Некорректный формат ввода\n");
+            ClearBuffer();
             continue;
         }
-        if (count != 1) {
-            printf("Incorrect flag\n");
+        if (count != 2) {
+            printf("Неккоректный флаг\n");
+            ClearBuffer();
         }
+
         kErrors status = ProccessFlag(c, &post);
         if (status != INC_INP_DATA && status != SUCCESS && status != INC_FLAG) {
             //DestroyMails(post.mails, post.mail_amount);
             return ProccessError(status);
-        }
-    }
+        } else {
+			switch (status) {
+				case INC_FLAG:
+					printf("Incorrect flag\n");
+					break;
+			}
+		}
+        fseek(stdin, 0, SEEK_END);
+	}
+    
     //DestroyMails(post.mails, post.mail_amount);
     return 0;
 }

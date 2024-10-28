@@ -1,0 +1,11 @@
+﻿  task9.c
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(204,4): warning C4013: ClearBuffer: нет определения; предполагается "extern" с возвратом типа "int"
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(212,36): warning C4047: функция: "tnode **" отличается по уровням косвенного обращения от "tnode *"
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(212,36): warning C4024: ProccessFlag: различные типы для формального и фактического параметров 2
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(197,9): warning C4101: n: неиспользованная локальная переменная
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(196,10): warning C4101: word: неиспользованная локальная переменная
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(262,42): warning C4090: функция: разные квалификаторы "const"
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(262,42): warning C4113: "int (__cdecl *)(void *,void *)" отличается в списках параметров от "_CoreCrtNonSecureSearchSortCompareFunction"
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(265,28): warning C4047: функция: "tnode *" отличается по уровням косвенного обращения от "tnode **"
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(265,28): warning C4024: StartInteraction: различные типы для формального и фактического параметров 1
+  task9.vcxproj -> D:\univer\fund_labs\fund_labs\LAB3\x64\Debug\task9.exe

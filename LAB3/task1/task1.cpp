@@ -22,7 +22,7 @@
 int Add(int a, int b);
 int Subtract(int a, int b);
 
-char* strrev(char* str)
+char* mystrrev(char* str)
 {
 	if (!str || !*str)
 		return str;
@@ -109,7 +109,7 @@ kErrors ConvertTo2SS(ll number, int r, char* out) {
 	int sign = 1;
 	int i = 0;
 	if (number < 0) {
-		number = abs(number);
+		number = ~number + 1;
 		sign = -1;
 	}
 
@@ -132,7 +132,7 @@ kErrors ConvertTo2SS(ll number, int r, char* out) {
 		i = Increment(i);
 	}
 	out[i] = '\0';
-	strrev(out);
+	mystrrev(out);
 	return SUCCESS;
 }
 
@@ -142,7 +142,7 @@ int main() {
 		return MEM_ALLOC_ERR;
 	}
 
-	kErrors status = ConvertTo2SS(52, 2, res);
+	kErrors status = ConvertTo2SS(-4, 2, res);
 	if (CheckErrors(status)) {
 		printf("%s\n", res);
 	}

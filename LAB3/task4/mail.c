@@ -157,12 +157,19 @@ int MailComparatorByCreationTime(void* a, void* b) {
 bool AddMail(Post* post, Mail mail) {
 	if (post->mail_buf_size == post->mail_amount) {
 		Mail* temp = post->mails;
-		post->mail_buf_size *= 2;
-		post->mails = (Mail*)realloc(post->mails, sizeof(Mail) * post->mail_buf_size);
+		
+		post->mails = (Mail*)realloc(post->mails, sizeof(Mail) * post->mail_buf_size * 2);
 		if (post->mails == NULL) {
 			post->mails = temp;
 			return false;
 		}
+
+		/*string s = string_create("-1");
+		for (int i = post->mail_buf_size; i < post->mail_buf_size; i++) {
+			post->mails[i].post_id = s;
+		}*/
+
+		post->mail_buf_size *= 2;
 	}
 
 	for (int i = 0; i < post->mail_buf_size; i++) {
