@@ -14,11 +14,14 @@
 #include "string.h"
 #include "mystring.h"
 
-string string_create(const char* s) {
-	string temp;
-	temp.symbols = s;
-	temp.size = strlen(s);
-	return temp;
+bool string_create(const char* s, string* out) {
+	out->symbols = (char*)malloc(strlen(s) + 1);
+	if (out->symbols == NULL) {
+		return false;
+	}
+	out->size= strlen(s);
+	strcpy(out->symbols, s);
+	return true;;
 }
 
 void string_clear(string* s) {

@@ -4,7 +4,7 @@ typedef struct string {
 	char* symbols;
 } string;
 
-string string_create(const char* s);
+bool string_create(const char* s, string* out);
 
 void string_clear(string* s);
 

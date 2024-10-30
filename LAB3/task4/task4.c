@@ -41,7 +41,10 @@ kErrors ProccessFlag(char flag, Post* post) {
         }
         scanf("%s", id);
         string s;
-        s = string_create(id);
+
+        if (!string_create(id, &s)) {
+            return MEM_ALLOC_ERR;
+        }
         if (!ValidatePostId(s)) {
             printf("Некорректный идентификатор\n");
             return INC_INP_DATA;
@@ -54,10 +57,11 @@ kErrors ProccessFlag(char flag, Post* post) {
         else {
             PrintMail(m);
         }
+        string_destroy(&s);
         break;
     case 'a': 
         printf("Введите данные посылки:\n");
-        Mail m_a;
+       Mail m_a;
         if (!ScanMail(&m_a)) {
             printf("Некорректные данные\n");
             return INC_INP_DATA;
@@ -75,7 +79,9 @@ kErrors ProccessFlag(char flag, Post* post) {
         }
         scanf("%s", id_d);
         string s_d;
-        s_d = string_create(id_d);
+        if (!string_create(id_d, &s_d)) {
+            return MEM_ALLOC_ERR;
+        }
         if (!ValidatePostId(s_d)) {
             printf("Некорректный идентификатор\n");
             free(id_d);
@@ -89,6 +95,7 @@ kErrors ProccessFlag(char flag, Post* post) {
         }
         free(id_d);
         break;
+        string_destroy(&s_d);
     case 'h':
         PrintHelp();
         break;
@@ -108,12 +115,15 @@ kErrors ProccessFlag(char flag, Post* post) {
             printf("Нет добавленных посылок\n");
             break;
         }
-        string t = string_create("-1");
+        string t;
+        if (!string_create("-1", &t)) {
+            return MEM_ALLOC_ERR;
+        }
 
         qsort(post->mails, post->mail_amount, sizeof(Mail), MailComparatorByCreationTime);
         for (int i = 0; i < post->mail_amount; i++) {
             if (string_comp(&(post->mails[i].post_id), &t) != 0) {
-                cur = *(ConvertToTm(post->mails[i].time_get));
+                cur = ConvertToTm(post->mails[i].time_get);
 
                 PrintMail(&(post->mails[i]));                
                 if (difftime(mktime(now), mktime(&cur)) > 0) {
@@ -149,8 +159,36 @@ int main()
     const int start_buf_size = 10;
     setlocale(LC_ALL, "RU");
     Post post;
-    bool res = CreateAddress(string_create("Moscow"), string_create("Volokolamskoe shosse"), 4, string_create(""), 
-                    18, string_create("112547"), &(post.post_address));
+
+    string city;
+    string street;
+    string post_id;
+    string building;
+
+    if (!string_create("Moscow", &city)) {
+        return ProccessError(MEM_ALLOC_ERR);
+    }
+    if (!string_create("Volokolamskoe shosse", &street)) {
+        string_destroy(&city);
+        return ProccessError(MEM_ALLOC_ERR);
+    }
+    if (!string_create("112547", &post_id)) {
+        string_destroy(&city);
+        string_destroy(&street);
+        return ProccessError(MEM_ALLOC_ERR);
+    }
+    if (!string_create("", &building)) {
+        string_destroy(&city);
+        string_destroy(&street);
+        string_destroy(&post_id);
+        return ProccessError(MEM_ALLOC_ERR);
+    }
+    
+
+
+
+    bool res = CreateAddress(city, street, 4, building, 
+                    18, post_id, &(post.post_address));
     if (!res) {
         return INC_ARGS;
     }
@@ -189,7 +227,7 @@ int main()
 
         kErrors status = ProccessFlag(c, &post);
         if (status != INC_INP_DATA && status != SUCCESS && status != INC_FLAG) {
-            //DestroyMails(post.mails, post.mail_amount);
+            DestroyMails(post.mails, post.mail_amount);
             return ProccessError(status);
         } else {
 			switch (status) {
@@ -200,8 +238,11 @@ int main()
 		}
         fseek(stdin, 0, SEEK_END);
 	}
-    
-    //DestroyMails(post.mails, post.mail_amount);
+    string_destroy(&city);
+    string_destroy(&street);
+    string_destroy(&post_id);
+    string_destroy(&building);
+    DestroyMails(post.mails, post.mail_amount);
     return 0;
 }
 

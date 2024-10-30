@@ -148,8 +148,8 @@ int MailComparatorBase(void* a, void* b) {
 int MailComparatorByCreationTime(void* a, void* b) {
 	Mail* m1 = (Mail*)a;
 	Mail* m2 = (Mail*)b;
-	struct tm t1 = *ConvertToTm(m1->time_created);
-	struct tm t2 = *ConvertToTm(m2->time_created);
+	struct tm t1 = ConvertToTm(m1->time_created);
+	struct tm t2 = ConvertToTm(m2->time_created);
 
 	return difftime(mktime(&t1), mktime(&t2)) > 0 ? 1 : -1;
 }
@@ -171,16 +171,19 @@ bool AddMail(Post* post, Mail mail) {
 
 		post->mail_buf_size *= 2;
 	}
-
+	string t;
+	if (!string_create("-1", &t)) {
+		return false;
+	}
 	for (int i = 0; i < post->mail_buf_size; i++) {
-		string t = string_create("-1");
-		if (string_comp(&(post->mails[i].post_id), &t) == 0 || i >= post->mail_amount) {
+		
+		if (i >= post->mail_amount || string_comp(&(post->mails[i].post_id), &t) == 0) {
 			post->mails[i] = mail;
 			post->mail_amount++;
 			break;
 		}
 	}
-
+	string_destroy(&t);
 	qsort(post->mails, post->mail_amount, sizeof(Mail), MailComparatorBase);
 	return true;
 }
@@ -191,7 +194,12 @@ bool DeleteMail(Post* post, string post_id) {
 		return false;
 	}
 
-	m->post_id = string_create("-1");
+	string s;
+	if (!string_create("-1", &s)) {
+		return false;
+	}
+	string_destroy(&(m->post_id));
+	string_copy(&m->post_id, &s);
 	return true;
 }
 
@@ -210,7 +218,10 @@ Mail* FindByPostID(string post_id, Post* post) {
 }
 
 void PrintMail(Mail* m) {
-	string temp = string_create("-1");
+	string temp;
+	if (!string_create("-1", &temp)) {
+		return;
+	}
 	if (string_comp(&(m->post_id), &temp) == 0) {
 		return;
 	}
@@ -219,6 +230,7 @@ void PrintMail(Mail* m) {
 	printf("Адрес получателя:");
 	PrintAddress(&(m->address));
 	printf("\n");
+	string_destroy(&temp);
 }
 
 
@@ -295,19 +307,36 @@ bool ScanMail(Mail* m) {
 	count += scanf("%s %s", time_get_s, temp);
 	strcat(time_get_s, " ");
 	strcat(time_get_s, temp);
-	string city = string_create(city_s);
-	string street = string_create(street_s);
-	string building = string_create(building_s);
-	string index = string_create(index_s);
-	string post_id = string_create(post_id_s);
-	string time_created = string_create(time_created_s);
-	string time_get = string_create(time_get_s);
+	string city; 
+	string_create(city_s, &city);
+	string street;
+	string_create(street_s, &street);
+	string building;
+	string_create(building_s, &building);
+	string index;
+	string_create(index_s, &index);
+	string post_id;
+	string_create(post_id_s, &post_id);
+	string time_created;
+	string_create(time_created_s, &time_created);
+	string time_get;
+	string_create(time_get_s, &time_get);
+
+
+	free(city_s);
+	free(street_s);
+	free(building_s);
+	free(index_s);
+	free(post_id_s);
+	free(time_created_s);
+	free(time_get_s);
+	free(temp);
 
 	bool status = CreateMail(city, street, house, building, apartment, index, post_id, weight, time_created, time_get, m);	
 	return status;
 }
 
-struct tm* ConvertToTm(string time) {
+struct tm ConvertToTm(string time) {
 	int d, M, y, h, m, s;
 	struct tm out;
 	sscanf(time.symbols, "%d:%d:%d %d:%d:%d", &d, &M, &y, &h, &m, &s);
@@ -318,7 +347,7 @@ struct tm* ConvertToTm(string time) {
 	out.tm_min = m;
 	out.tm_sec = s;
 	out.tm_isdst = -1;
-	return &out;
+	return out;
 }
 
 void DestroyMails(Mail* mails, int size) {

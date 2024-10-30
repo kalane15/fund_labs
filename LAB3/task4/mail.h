@@ -52,7 +52,7 @@ Mail* FindByPostID(string post_id, Post* post);
 void PrintMail(Mail* m);
 
 bool ScanMail(Mail* m);
-struct tm* ConvertToTm(string time);
+struct tm ConvertToTm(string time);
 bool DeleteMail(Post* post, string post_id);
 int MailComparatorByCreationTime(void* a, void* b);
 int MailComparatorBase(void* a, void* b);
