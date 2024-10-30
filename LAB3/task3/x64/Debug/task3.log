@@ -1,3 +1,11 @@
-﻿  task3.cpp
+﻿  myerrors.cpp
+  task3.cpp
 D:\univer\fund_labs\fund_labs\LAB3\task3\task3.cpp(90,8): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Выполнение Code Analysis для C/C++...
+  Создание кода...
   task3.vcxproj -> D:\univer\fund_labs\fund_labs\LAB3\x64\Debug\task3.exe
+D:\univer\fund_labs\fund_labs\LAB3\task3\task3.cpp(83): warning C6001: Использование неинициализированной памяти "*employees.surname".
+D:\univer\fund_labs\fund_labs\LAB3\task3\task3.cpp(84): warning C6001: Использование неинициализированной памяти "*employees.name".
+D:\univer\fund_labs\fund_labs\LAB3\task3\task3.cpp(139): warning C6011: Разыменование пустого указателя "employees". Самое раннее расположение, где это могло произойти, см. в строке 135
+D:\univer\fund_labs\fund_labs\LAB3\task3\task3.cpp(148): warning C6386: Переполнение буфера при записи в "*employees".
+D:\univer\fund_labs\fund_labs\LAB3\task3\task3.cpp(148): warning C28182: Разыменование пустого (NULL) указателя. "*employees" содержит то же значение NULL, которое находилось в "realloc()`136". 

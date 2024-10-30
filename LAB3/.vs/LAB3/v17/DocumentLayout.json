@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\task9.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|solutionrelative:task9\\task9.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\tree_funcs.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|solutionrelative:task9\\tree_funcs.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\vector.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|solutionrelative:task9\\vector.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\bin_tree.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|solutionrelative:task9\\bin_tree.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\bin_tree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|solutionrelative:task9\\bin_tree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\myerrors.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|solutionrelative:task4\\myerrors.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mail.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -33,6 +17,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mail.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|solutionrelative:task4\\mail.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\task9.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|solutionrelative:task9\\task9.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\tree_funcs.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|solutionrelative:task9\\tree_funcs.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\bin_tree.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|solutionrelative:task9\\bin_tree.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\vector.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|solutionrelative:task9\\vector.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\bin_tree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|solutionrelative:task9\\bin_tree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mystring.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -49,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\myerrors.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|solutionrelative:task4\\myerrors.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\myerrors.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|solutionrelative:task4\\myerrors.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\myerrors.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -126,11 +126,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "mystring.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mystring.c",
               "RelativeDocumentMoniker": "task4\\mystring.c",
@@ -143,43 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "exe_main.cpp",
-              "DocumentMoniker": "D:\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\exe_main.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\exe_main.cpp",
-              "ToolTip": "D:\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\exe_main.cpp",
-              "RelativeToolTip": "..\\..\\..\\..\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\exe_main.cpp",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-26T13:28:39.988Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "myerrors.c",
-              "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\myerrors.c",
-              "RelativeDocumentMoniker": "task4\\myerrors.c",
-              "ToolTip": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\myerrors.c",
-              "RelativeToolTip": "task4\\myerrors.c",
-              "ViewState": "AQIAAAcAAAAAAAAAAABBwAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-10-24T08:49:35.918Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "mail.h",
-              "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mail.h",
-              "RelativeDocumentMoniker": "task4\\mail.h",
-              "ToolTip": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mail.h",
-              "RelativeToolTip": "task4\\mail.h",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAowBcAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-24T09:02:28.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "myerrors.h",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\myerrors.h",
               "RelativeDocumentMoniker": "task4\\myerrors.h",
@@ -191,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "mystring.h",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mystring.h",
               "RelativeDocumentMoniker": "task4\\mystring.h",
@@ -203,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "myerrors.h",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\myerrors.h",
               "RelativeDocumentMoniker": "task9\\myerrors.h",
@@ -215,20 +179,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "task9.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\task9.c",
               "RelativeDocumentMoniker": "task9\\task9.c",
               "ToolTip": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\task9.c",
               "RelativeToolTip": "task9\\task9.c",
-              "ViewState": "AQIAAIIAAAAAAAAAAAAuwM4AAAAkAAAA",
+              "ViewState": "AQIAAK4AAAAAAAAAAAAcwLkAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-10-27T09:08:31.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "bin_tree.h",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\bin_tree.h",
               "RelativeDocumentMoniker": "task9\\bin_tree.h",
@@ -240,32 +204,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "tree_funcs.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\tree_funcs.c",
               "RelativeDocumentMoniker": "task9\\tree_funcs.c",
               "ToolTip": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\tree_funcs.c",
               "RelativeToolTip": "task9\\tree_funcs.c",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAABIAAAAeAAAA",
+              "ViewState": "AQIAALQAAAAAAAAAAAAowLcAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-10-27T11:17:34.711Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "bin_tree.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\bin_tree.c",
               "RelativeDocumentMoniker": "task9\\bin_tree.c",
               "ToolTip": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\bin_tree.c",
               "RelativeToolTip": "task9\\bin_tree.c",
-              "ViewState": "AQIAABAAAAAAAAAAAAAowBwAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAowBYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-10-27T09:10:22.993Z"
+              "WhenOpened": "2024-10-27T09:10:22.993Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "vector.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\vector.c",
               "RelativeDocumentMoniker": "task9\\vector.c",
@@ -277,29 +242,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "task4.c",
+              "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\task4.c",
+              "RelativeDocumentMoniker": "task4\\task4.c",
+              "ToolTip": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\task4.c",
+              "RelativeToolTip": "task4\\task4.c",
+              "ViewState": "AQIAAFgAAAAAAAAAAAD4v/QAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-10-24T08:07:03.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "mail.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mail.c",
               "RelativeDocumentMoniker": "task4\\mail.c",
               "ToolTip": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mail.c",
               "RelativeToolTip": "task4\\mail.c",
-              "ViewState": "AQIAALEAAAAAAAAAAAAowL4AAAAnAAAA",
+              "ViewState": "AQIAAJ0BAAAAAAAAAAAcwLEBAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-10-24T09:02:36.306Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "task4.c",
-              "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\task4.c",
-              "RelativeDocumentMoniker": "task4\\task4.c",
-              "ToolTip": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\task4.c",
-              "RelativeToolTip": "task4\\task4.c",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAowGYAAAAdAAAA",
+              "DocumentIndex": 0,
+              "Title": "myerrors.c",
+              "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\myerrors.c",
+              "RelativeDocumentMoniker": "task4\\myerrors.c",
+              "ToolTip": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\myerrors.c",
+              "RelativeToolTip": "task4\\myerrors.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-10-24T08:07:03.221Z",
+              "WhenOpened": "2024-10-24T08:49:35.918Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "mail.h",
+              "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mail.h",
+              "RelativeDocumentMoniker": "task4\\mail.h",
+              "ToolTip": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mail.h",
+              "RelativeToolTip": "task4\\mail.h",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAowBcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-24T09:02:28.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "exe_main.cpp",
+              "DocumentMoniker": "D:\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\exe_main.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\exe_main.cpp",
+              "ToolTip": "D:\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\exe_main.cpp",
+              "RelativeToolTip": "..\\..\\..\\..\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\exe_main.cpp",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-26T13:28:39.988Z"
             },
             {
               "$type": "Document",

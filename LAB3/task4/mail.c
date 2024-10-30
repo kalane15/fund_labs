@@ -112,6 +112,12 @@ bool ValidateMailData(string city, string street, int house, string building, in
 	if (!ValidateTime(time_get)) {
 		return false;
 	}
+
+	struct tm t1 = ConvertToTm(time_created);
+	struct tm t2 = ConvertToTm(time_get);
+	if (difftime(mktime(&t1), mktime(&t2)) > 0) {
+		return false;
+	}
 	return true;
 }
 
@@ -265,7 +271,7 @@ bool ScanMail(Mail* m) {
 			free(temp);
 		}
 	}
-
+	bool status = true;
 	strcpy(city_s, "");
 	strcpy(street_s, "");
 	strcpy(building_s, "");
@@ -278,29 +284,143 @@ bool ScanMail(Mail* m) {
 	int apartment;
 	int house;
 	int count = 0;
+	char* a;
 	printf("¬ведите город:\n");
-	count += scanf("%s", city_s);
+	a = gets(city_s);
+	if (a == NULL) {
+		free(city_s);
+		free(street_s);
+		free(building_s);
+		free(index_s);
+		free(post_id_s);
+		free(time_created_s);
+		free(time_get_s);
+		free(temp);
+		return false;
+	}
 	printf("¬ведите улицу:\n");
-	count += scanf("%s", street_s);
+	a = gets(street_s);
+	if (a == NULL) {
+		free(city_s);
+		free(street_s);
+		free(building_s);
+		free(index_s);
+		free(post_id_s);
+		free(time_created_s);
+		free(time_get_s);
+		free(temp);
+		return false;
+	}
 	printf("¬ведите номер дома:\n");
-	count += scanf("%d", &house);
+	count = scanf("%d", &house);
+	if (count != 1) {
+		free(city_s);
+		free(street_s);
+		free(building_s);
+		free(index_s);
+		free(post_id_s);
+		free(time_created_s);
+		free(time_get_s);
+		free(temp);
+		return false;
+	}
+	getchar();
 	printf("¬ведите адрес строени€:\n");
-	count += scanf("%s", building_s);
+	a = gets(building_s);
+	if (a == NULL) {
+		free(city_s);
+		free(street_s);
+		free(building_s);
+		free(index_s);
+		free(post_id_s);
+		free(time_created_s);
+		free(time_get_s);
+		free(temp);
+		return false;
+	}
 	printf("¬ведите номер квартиры:\n");
-	count += scanf("%d", &apartment);
+	count = scanf("%d", &apartment);
+	if (count != 1) {
+		free(city_s);
+		free(street_s);
+		free(building_s);
+		free(index_s);
+		free(post_id_s);
+		free(time_created_s);
+		free(time_get_s);
+		free(temp);
+		return false;
+	}
 	printf("¬ведите почтовый индекс:\n");
-	count += scanf("%s", index_s);
+	count = scanf("%s", index_s);
+	if (count != 1) {
+		free(city_s);
+		free(street_s);
+		free(building_s);
+		free(index_s);
+		free(post_id_s);
+		free(time_created_s);
+		free(time_get_s);
+		free(temp);
+		return false;
+	}
 	printf("¬ведите почтовый идентификатор:\n");
-	count += scanf("%s", post_id_s);
+	count = scanf("%s", post_id_s);
+	if (count != 1) {
+		free(city_s);
+		free(street_s);
+		free(building_s);
+		free(index_s);
+		free(post_id_s);
+		free(time_created_s);
+		free(time_get_s);
+		free(temp);
+		return false;
+	}
 	printf("¬ведите вес посылки:\n");
-	count += scanf("%lf", &weight);
+	count = scanf("%lf", &weight);
+	if (count != 1) {
+		free(city_s);
+		free(street_s);
+		free(building_s);
+		free(index_s);
+		free(post_id_s);
+		free(time_created_s);
+		free(time_get_s);
+		free(temp);
+		return false;
+	}
 
 	printf("¬ведите врем€ создани€:\n");
-	count += scanf("%s %s", time_created_s, temp);
+	count = scanf("%s %s", time_created_s, temp);
+	if (count != 2) {
+		free(city_s);
+		free(street_s);
+		free(building_s);
+		free(index_s);
+		free(post_id_s);
+		free(time_created_s);
+		free(time_get_s);
+		free(temp);
+		return false;
+	}
+
 	strcat(time_created_s, " ");
 	strcat(time_created_s, temp);
 	printf("¬ведите врем€ вручени€:\n");
-	count += scanf("%s %s", time_get_s, temp);
+	count = scanf("%s %s", time_get_s, temp);
+	if (count != 2) {
+		free(city_s);
+		free(street_s);
+		free(building_s);
+		free(index_s);
+		free(post_id_s);
+		free(time_created_s);
+		free(time_get_s);
+		free(temp);
+		return false;
+	}
+
 	strcat(time_get_s, " ");
 	strcat(time_get_s, temp);
 	string city; 
@@ -327,8 +447,10 @@ bool ScanMail(Mail* m) {
 	free(time_created_s);
 	free(time_get_s);
 	free(temp);
-
-	bool status = CreateMail(city, street, house, building, apartment, index, post_id, weight, time_created, time_get, m);	
+	if (status != true) {
+		return false;
+	}
+	status = CreateMail(city, street, house, building, apartment, index, post_id, weight, time_created, time_get, m);	
 	return status;
 }
 

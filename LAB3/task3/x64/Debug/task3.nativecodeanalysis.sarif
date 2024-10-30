@@ -1,0 +1,1514 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6001",
+          "message": {
+            "text": "Использование неинициализированной памяти \"*employees.surname\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                },
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 8,
+                  "endLine": 83,
+                  "endColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ClearEmloyees",
+                  "decoratedName": "?ClearEmloyees@@YAXPEAUEmployee@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 82,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 82,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 83,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 84,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 82,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 82,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 83,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "Инициализация \"*employees.surname\" не выполнена"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 84,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 83,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "\"*employees.surname\" используется, но, возможно, не инициализировано"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6001",
+          "message": {
+            "text": "Использование неинициализированной памяти \"*employees.name\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                },
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 8,
+                  "endLine": 84,
+                  "endColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ClearEmloyees",
+                  "decoratedName": "?ClearEmloyees@@YAXPEAUEmployee@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 82,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 82,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 83,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 84,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 82,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 82,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 83,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 84,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "Инициализация \"*employees.name\" не выполнена"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 84,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "\"*employees.name\" используется, но, возможно, не инициализировано"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Разыменование пустого указателя \"employees\". Самое раннее расположение, где это могло произойти, см. в строке 135"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                },
+                "region": {
+                  "startLine": 139,
+                  "startColumn": 6,
+                  "endLine": 139,
+                  "endColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GetInfo",
+                  "decoratedName": "?GetInfo@@YA?AW4kErrors@@PEAPEAUEmployee@@PEADPEAHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 104,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 105,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 109,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 110,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 111,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 112,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 113,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 114,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 115,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 116,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 117,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 118,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 126,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 134,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 135,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 136,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 137,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 138,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "\"employees\" может быть равно NULL (Войти в эту ветвь)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 139,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "\"employees\" разыменовано, но, возможно, по-прежнему равно NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "Переполнение буфера при записи в \"*employees\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                },
+                "region": {
+                  "startLine": 148,
+                  "startColumn": 4,
+                  "endLine": 148,
+                  "endColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GetInfo",
+                  "decoratedName": "?GetInfo@@YA?AW4kErrors@@PEAPEAUEmployee@@PEADPEAHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 104,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 105,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 109,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 110,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 111,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 112,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 113,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 114,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 115,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 116,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 117,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 118,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 126,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 134,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 135,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 136,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 137,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 138,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "\"employees\" может быть равно NULL (Пропустить эту ветвь)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 148,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 149,
+                            "startColumn": 4
+                          }
+                        },
+                        "message": {
+                          "text": "\"i\" может быть равно 1"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 113,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Продолжить этот цикл (предполагается \"!feof(file)\")"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 114,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 115,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 116,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 117,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 118,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Пропустить эту ветвь (предполагается, что \"count!=4\" равно false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 126,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "Пропустить эту ветвь (предполагается, что \"!CheckSurname(cur.surname)\" равно false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 134,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Пропустить эту ветвь (предполагается, что \"buffer_size==i\" равно false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 148,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Недопустимая операция записи в \"*employees\" (за пределами доступного для записи диапазона)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C28182",
+          "message": {
+            "text": "Разыменование пустого (NULL) указателя. \"*employees\" содержит то же значение NULL, которое находилось в \"realloc()`136\". "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                },
+                "region": {
+                  "startLine": 148,
+                  "startColumn": 4,
+                  "endLine": 148,
+                  "endColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GetInfo",
+                  "decoratedName": "?GetInfo@@YA?AW4kErrors@@PEAPEAUEmployee@@PEADPEAHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 104,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 105,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 109,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 110,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 111,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 112,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 113,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 114,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 115,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 116,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 117,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 118,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 126,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 134,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 135,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 136,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "\"*employees\" может быть равно NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 137,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 138,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "Пропустить эту ветвь (предполагается, что \"employees==0\" равно false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+                          },
+                          "region": {
+                            "startLine": 148,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "\"*employees\" разыменовано, но, возможно, по-прежнему равно NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33811.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/univer/fund_labs/fund_labs/LAB3/task3/task3.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "6fef1dd318c84d67440b843ff571687860d41c1a37e88a66537237d3adeaf035"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/univer/fund_labs/fund_labs/lab3/task3/myerrors.h"
+          },
+          "hashes": {
+            "sha-256": "3ef970f684638a97b21c96a9d07f60d02b2c1fe55bf7a78d0920404430377b0a"
+          }
+        }
+      ]
+    }
+  ]
+}

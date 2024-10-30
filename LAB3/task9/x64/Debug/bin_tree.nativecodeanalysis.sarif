@@ -1,0 +1,51 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33811.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/univer/fund_labs/fund_labs/lab3/task9/bin_tree.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "f405d529a43a86679ca7e065e414ecc3aed7b173434a479fe38d28dbec8a9fbd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/univer/fund_labs/fund_labs/lab3/task9/myerrors.h"
+          },
+          "hashes": {
+            "sha-256": "3235e9f24793012d7cb97f4010424dcd0fa6d6ec24edbbd2c9843c78b616b321"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/univer/fund_labs/fund_labs/lab3/task9/bin_tree.h"
+          },
+          "hashes": {
+            "sha-256": "2702621d0ff638faa4fd399f0e7e4cdc5364720b75852b4d65df76731a83714f"
+          }
+        }
+      ]
+    }
+  ]
+}

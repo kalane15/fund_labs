@@ -1,4 +1,9 @@
-﻿  task2.cpp
+﻿  myerrors.cpp
+  task2.cpp
 D:\univer\fund_labs\fund_labs\LAB3\task2\task2.cpp(43,20): warning C4018: <: несоответствие типов со знаком и без знака
 D:\univer\fund_labs\fund_labs\LAB3\task2\task2.cpp(54,20): warning C4018: <: несоответствие типов со знаком и без знака
+  vector.cpp
+D:\univer\fund_labs\fund_labs\LAB3\task2\vector.cpp(59,20): warning C4018: <: несоответствие типов со знаком и без знака
+  Выполнение Code Analysis для C/C++...
+  Создание кода...
   task2.vcxproj -> D:\univer\fund_labs\fund_labs\LAB3\x64\Debug\task2.exe

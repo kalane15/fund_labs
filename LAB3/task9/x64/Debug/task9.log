@@ -1,7 +1,18 @@
-﻿  task9.c
-D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(210,4): warning C4013: ClearBuffer: нет определения; предполагается "extern" с возвратом типа "int"
-D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(200,9): warning C4101: n: неиспользованная локальная переменная
-D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(199,10): warning C4101: word: неиспользованная локальная переменная
-D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(284,42): warning C4090: функция: разные квалификаторы "const"
-D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(284,42): warning C4113: "int (__cdecl *)(void *,void *)" отличается в списках параметров от "_CoreCrtNonSecureSearchSortCompareFunction"
+﻿  bin_tree.c
+D:\univer\fund_labs\fund_labs\LAB3\task9\bin_tree.c(47,36): warning C4090: функция: разные квалификаторы "const"
+  myerrors.c
+  task9.c
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(188,45): warning C4090: функция: разные квалификаторы "const"
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(188,45): warning C4113: "int (__cdecl *)(void *,void *)" отличается в списках параметров от "_CoreCrtNonSecureSearchSortCompareFunction"
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(211,4): warning C4013: ClearBuffer: нет определения; предполагается "extern" с возвратом типа "int"
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(201,9): warning C4101: n: неиспользованная локальная переменная
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(200,10): warning C4101: word: неиспользованная локальная переменная
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(285,42): warning C4090: функция: разные квалификаторы "const"
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(285,42): warning C4113: "int (__cdecl *)(void *,void *)" отличается в списках параметров от "_CoreCrtNonSecureSearchSortCompareFunction"
+  tree_funcs.c
+  vector.c
+  Выполнение Code Analysis для C/C++...
+  Создание кода...
   task9.vcxproj -> D:\univer\fund_labs\fund_labs\LAB3\x64\Debug\task9.exe
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(154): warning C6054: Возможно, строка "word" не завершается нулем.
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(237): warning C6001: Использование неинициализированной памяти "*v->buffer".

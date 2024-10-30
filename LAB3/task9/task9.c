@@ -185,6 +185,7 @@ kErrors ProccessFlag(char flag, tnode** tree, vector* v) {
 			printf("Ошибка загрузки файла\n");
 			return INC_INP_DATA;
 		}
+		qsort(v->buffer, v->size, sizeof(tnode*), TnodeCompCount);
 		break;
 	case 'e':
 		return SUCCESS;
