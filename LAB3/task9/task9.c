@@ -89,6 +89,7 @@ void PrintHelp() {
 	printf("d - определить глубину дерева\n");
 	printf("n - вывод n самых часто встречающихся слов\n");
 	printf("p - печать дерева\n");
+	printf("e - выход из программы\n");
 }
 
 kErrors ProccessFlag(char flag, tnode** tree, vector* v) {
@@ -193,13 +194,16 @@ kErrors ProccessFlag(char flag, tnode** tree, vector* v) {
 	return SUCCESS;
 }
 
-kErrors StartInteraction(tnode* tree, vector* nodes) {
+kErrors StartInteraction(tnode** tree, vector* nodes) {
 	char c = 'a', cn = 'a';
     char word[1024];
     int n;
 	printf("Интерактивный режим запущен. Напишите h для просмотра списка команд\n");
 	while (!(c == 'e' && cn == '\n')) {
 		int count = fscanf(stdin, "%c", &c);
+		if (c == '\n') {
+			continue;
+		}
 		count += fscanf(stdin, "%c", &cn);
 		if (cn != '\n') {
 			printf("Некорректный формат ввода\n");
@@ -213,7 +217,6 @@ kErrors StartInteraction(tnode* tree, vector* nodes) {
 
 		kErrors status = ProccessFlag(c, tree, nodes);
 		if (status != INC_INP_DATA && status != SUCCESS && status != INC_FLAG) {
-			//DestroyMails(post.mails, post.mail_amount);
 			return ProccessError(status);
 		}
 		else {
@@ -223,7 +226,7 @@ kErrors StartInteraction(tnode* tree, vector* nodes) {
 				break;
 			}
 		}
-		fseek(stdin, 0, SEEK_END);
+		ClearBuffer();
 	}
 	return SUCCESS;
 }

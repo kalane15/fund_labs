@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\tree_funcs.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|solutionrelative:task9\\tree_funcs.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\task9.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|solutionrelative:task9\\task9.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\tree_funcs.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|solutionrelative:task9\\tree_funcs.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{484A6B0C-9629-41B3-B7C7-1F36DACCF3C0}|task9\\task9.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\vector.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -126,7 +126,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -215,13 +215,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "task9.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\task9.c",
               "RelativeDocumentMoniker": "task9\\task9.c",
               "ToolTip": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\task9.c",
               "RelativeToolTip": "task9\\task9.c",
-              "ViewState": "AQIAAL4AAAAAAAAAAAAowMkAAAAAAAAA",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAuwM4AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-10-27T09:08:31.124Z",
               "EditorCaption": ""
@@ -240,13 +240,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "tree_funcs.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\tree_funcs.c",
               "RelativeDocumentMoniker": "task9\\tree_funcs.c",
               "ToolTip": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\tree_funcs.c",
               "RelativeToolTip": "task9\\tree_funcs.c",
-              "ViewState": "AQIAALQAAAAAAAAAAAAowL0AAAASAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAABIAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-10-27T11:17:34.711Z",
               "EditorCaption": ""
@@ -261,8 +261,7 @@
               "RelativeToolTip": "task9\\bin_tree.c",
               "ViewState": "AQIAABAAAAAAAAAAAAAowBwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-10-27T09:10:22.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T09:10:22.993Z"
             },
             {
               "$type": "Document",
@@ -274,8 +273,7 @@
               "RelativeToolTip": "task9\\vector.c",
               "ViewState": "AQIAACUAAAAAAAAAAAAowDoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-10-27T14:06:28.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T14:06:28.745Z"
             },
             {
               "$type": "Document",

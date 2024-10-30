@@ -16,8 +16,7 @@
 kErrors AddNode(tnode** p, const char* w, tnode** added_node, bool* is_added);
 void ClearBuffer(void)
 {
-    char c;
-    while (getchar() != '\n' && getchar != EOF);
+    fseek(stdin, 0, SEEK_END);
 }
 
 bool InArray(char c, char** array, int array_size) {

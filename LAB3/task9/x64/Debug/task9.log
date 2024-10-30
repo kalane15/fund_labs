@@ -1,4 +1,7 @@
-﻿  tree_funcs.c
-D:\univer\fund_labs\fund_labs\LAB3\task9\tree_funcs.c(20,41): warning C4047: !=: "int (__cdecl *)(void)" отличается по уровням косвенного обращения от "int"
-D:\univer\fund_labs\fund_labs\LAB3\task9\tree_funcs.c(19,10): warning C4101: c: неиспользованная локальная переменная
+﻿  task9.c
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(210,4): warning C4013: ClearBuffer: нет определения; предполагается "extern" с возвратом типа "int"
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(200,9): warning C4101: n: неиспользованная локальная переменная
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(199,10): warning C4101: word: неиспользованная локальная переменная
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(284,42): warning C4090: функция: разные квалификаторы "const"
+D:\univer\fund_labs\fund_labs\LAB3\task9\task9.c(284,42): warning C4113: "int (__cdecl *)(void *,void *)" отличается в списках параметров от "_CoreCrtNonSecureSearchSortCompareFunction"
   task9.vcxproj -> D:\univer\fund_labs\fund_labs\LAB3\x64\Debug\task9.exe
