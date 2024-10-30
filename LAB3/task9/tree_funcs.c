@@ -60,12 +60,14 @@ kErrors ReadTreeFromFile(FILE* in, tnode** out, char** seps, int seps_count, vec
             status = AddNode(out, cur, &cur_node, &is_added);
             if (status != SUCCESS) {
                 ClearTree(*out);
+                free(cur);
                 return status;
             }
             if (is_added) {
                 st = vector_push(v, cur_node);
                 if (st == false) {
                     ClearTree(*out);
+                    free(cur);
                     return MEM_ALLOC_ERR;
                 }
             }           
@@ -73,6 +75,7 @@ kErrors ReadTreeFromFile(FILE* in, tnode** out, char** seps, int seps_count, vec
             cur = (char*)malloc(256);
             if (cur == NULL) {
                 ClearTree(*out);
+                free(cur);
                 return MEM_ALLOC_ERR;
             }
             strcpy(cur, "");
@@ -86,16 +89,19 @@ kErrors ReadTreeFromFile(FILE* in, tnode** out, char** seps, int seps_count, vec
         status = AddNode(out, cur, &cur_node, &is_added);
         if (status != SUCCESS) {
             ClearTree(*out);
+            free(cur);
             return status;
         }
         if (is_added) {
             st = vector_push(v, cur_node);
             if (st == false) {
                 ClearTree(*out);
+                free(cur);
                 return MEM_ALLOC_ERR;
             }
         }
     }
+    free(cur);
     return SUCCESS;
 }
 
@@ -183,7 +189,7 @@ kErrors LoadTreeFromFile(tnode** tree, FILE* out, vector* v) {
     bool b;
     int count = 0;
     count = fscanf(out, "%d %s\n", &a, s);
-    while (!feof(out)) {        
+    while (!feof(out) || count > 0) {        
         if (count != 2) {
             free(s);
             return INC_INP_DATA;

@@ -31,7 +31,14 @@ kErrors AddNode(tnode** p, const char* w, tnode** added_node, bool* is_added)
 		if ((*p) == NULL) {
 			return MEM_ALLOC_ERR;
 		}
-		(*p)->word = _strdup(w);
+
+		(*p) -> word = (char*)malloc(strlen(w) + 1);
+		if ((*p)->word == NULL) {
+			free((*p));
+			return MEM_ALLOC_ERR;
+		}
+
+		strcpy((*p)->word, w);
 		(*p)->count = 1;
 		(*p)->left = (*p)->right = NULL;
 		*added_node = *p;

@@ -185,6 +185,8 @@ kErrors ProccessFlag(char flag, tnode** tree, vector* v) {
 			return INC_INP_DATA;
 		}
 		break;
+	case 'e':
+		return SUCCESS;
 	default:
 		return INC_FLAG;
 	}
@@ -195,7 +197,7 @@ kErrors StartInteraction(tnode* tree, vector* nodes) {
 	char c = 'a', cn = 'a';
     char word[1024];
     int n;
-
+	printf("Интерактивный режим запущен. Напишите h для просмотра списка команд\n");
 	while (!(c == 'e' && cn == '\n')) {
 		int count = fscanf(stdin, "%c", &c);
 		count += fscanf(stdin, "%c", &cn);
@@ -226,6 +228,13 @@ kErrors StartInteraction(tnode* tree, vector* nodes) {
 	return SUCCESS;
 }
 
+void FreeVectorElements(vector* v) {
+	for (int i = 0; i < v->size; i++) {
+		free(v->buffer[i]->word);
+		free(v->buffer[i]);
+	}
+}
+
 int main(int argsc, char** args)
 {
 	setlocale(LC_ALL, "RU");
@@ -237,34 +246,45 @@ int main(int argsc, char** args)
 	if (status != SUCCESS) {
 		return status;
 	}
-	CheckInput(argsc, copied_args);
+	status = CheckInput(argsc, copied_args);
 	if (status != SUCCESS) {
+		FreeStringArray(copied_args, argsc);
 		return ProccessError(status);
 	}
 	FILE* file = fopen(args[1], "r");
 	if (file == NULL) {
+		FreeStringArray(copied_args, argsc);
 		return ProccessError(INC_FILE);
 	}
 
 	tnode* tree = NULL;
-	tnode** nodes = (tnode**)malloc(sizeof(tnode*) * 10);
 
 	vector v;
 	bool a = vector_create(&v, 10);
 
 	if (a == false) {
 		FreeStringArray(copied_args, argsc);
+		FreeVectorElements(&v);
+		vector_destroy(&v);
 		return MEM_ALLOC_ERR;
 	}
 
 
-	ReadTreeFromFile(file, &tree, copied_args + 2, argsc - 2, &v);
+	status = ReadTreeFromFile(file, &tree, copied_args + 2, argsc - 2, &v);
+	if (status != SUCCESS) {
+		FreeVectorElements(&v);
+		FreeStringArray(copied_args, argsc);
+		vector_destroy(&v);
+		return ProccessError(status);
+	}
+
 	qsort(v.buffer, v.size, sizeof(tnode*), TnodeCompCount);
 	fclose(file);
 
 	status = StartInteraction(&tree, &v);
-
 	FreeStringArray(copied_args, argsc);
+	FreeVectorElements(&v);
+	vector_destroy(&v);
 	return ProccessError(status);
 }
 

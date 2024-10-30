@@ -1,5 +1,1 @@
-Hello, world!
-This is a test file.
-This file contains some words.
-Words can repeat, for example, the word "test" appears twice: test, test.
-Hello again!
+Hello
