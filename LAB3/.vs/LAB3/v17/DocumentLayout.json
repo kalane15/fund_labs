@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\myerrors.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|solutionrelative:task4\\myerrors.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mail.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|solutionrelative:task4\\mail.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\task4.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|solutionrelative:task4\\task4.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79285FA9-B055-41C6-95BF-1B300892A535}|task8\\task8.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task8\\task8.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79285FA9-B055-41C6-95BF-1B300892A535}|task8\\task8.vcxproj|solutionrelative:task8\\task8.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\myerrors.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|solutionrelative:task4\\myerrors.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89843AC4-EA29-482C-A274-9D3143BED6E3}|task4\\task4.vcxproj|D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mail.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -130,7 +134,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "mystring.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mystring.c",
               "RelativeDocumentMoniker": "task4\\mystring.c",
@@ -143,7 +147,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
+              "Title": "task8.cpp",
+              "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task8\\task8.cpp",
+              "RelativeDocumentMoniker": "task8\\task8.cpp",
+              "ToolTip": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task8\\task8.cpp",
+              "RelativeToolTip": "task8\\task8.cpp",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAC4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-30T17:58:44.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "myerrors.h",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\myerrors.h",
               "RelativeDocumentMoniker": "task4\\myerrors.h",
@@ -155,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "mystring.h",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mystring.h",
               "RelativeDocumentMoniker": "task4\\mystring.h",
@@ -167,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "myerrors.h",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\myerrors.h",
               "RelativeDocumentMoniker": "task9\\myerrors.h",
@@ -179,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "task9.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\task9.c",
               "RelativeDocumentMoniker": "task9\\task9.c",
@@ -187,12 +204,11 @@
               "RelativeToolTip": "task9\\task9.c",
               "ViewState": "AQIAAK4AAAAAAAAAAAAcwLkAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-10-27T09:08:31.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T09:08:31.124Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "bin_tree.h",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\bin_tree.h",
               "RelativeDocumentMoniker": "task9\\bin_tree.h",
@@ -204,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "tree_funcs.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\tree_funcs.c",
               "RelativeDocumentMoniker": "task9\\tree_funcs.c",
@@ -212,12 +228,11 @@
               "RelativeToolTip": "task9\\tree_funcs.c",
               "ViewState": "AQIAALQAAAAAAAAAAAAowLcAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-10-27T11:17:34.711Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T11:17:34.711Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "bin_tree.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\bin_tree.c",
               "RelativeDocumentMoniker": "task9\\bin_tree.c",
@@ -225,12 +240,11 @@
               "RelativeToolTip": "task9\\bin_tree.c",
               "ViewState": "AQIAAAYAAAAAAAAAAAAowBYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-10-27T09:10:22.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T09:10:22.993Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "vector.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\vector.c",
               "RelativeDocumentMoniker": "task9\\vector.c",
@@ -242,33 +256,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "task4.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\task4.c",
               "RelativeDocumentMoniker": "task4\\task4.c",
               "ToolTip": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\task4.c",
               "RelativeToolTip": "task4\\task4.c",
-              "ViewState": "AQIAAFgAAAAAAAAAAAD4v/QAAAALAAAA",
+              "ViewState": "AQIAAMMAAAAAAAAAAAAAANYAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-10-24T08:07:03.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "mail.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mail.c",
               "RelativeDocumentMoniker": "task4\\mail.c",
               "ToolTip": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mail.c",
               "RelativeToolTip": "task4\\mail.c",
-              "ViewState": "AQIAAJ0BAAAAAAAAAAAcwLEBAAAQAAAA",
+              "ViewState": "AQIAAJ0BAAAAAAAAAAAcwKoBAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-10-24T09:02:36.306Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "myerrors.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\myerrors.c",
               "RelativeDocumentMoniker": "task4\\myerrors.c",
@@ -276,12 +290,11 @@
               "RelativeToolTip": "task4\\myerrors.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-10-24T08:49:35.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:49:35.918Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "mail.h",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task4\\mail.h",
               "RelativeDocumentMoniker": "task4\\mail.h",
@@ -289,12 +302,11 @@
               "RelativeToolTip": "task4\\mail.h",
               "ViewState": "AQIAAAMAAAAAAAAAAAAowBcAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-24T09:02:28.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T09:02:28.305Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "exe_main.cpp",
               "DocumentMoniker": "D:\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\exe_main.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\exe_main.cpp",
@@ -306,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "myerrors.c",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\myerrors.c",
               "RelativeDocumentMoniker": "task9\\myerrors.c",
@@ -318,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "tree_funcs.h",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\tree_funcs.h",
               "RelativeDocumentMoniker": "task9\\tree_funcs.h",
@@ -330,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "stdio.h",
               "DocumentMoniker": "D:\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
@@ -342,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "exe_common.inl",
               "DocumentMoniker": "D:\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\exe_common.inl",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\exe_common.inl",
@@ -354,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "vector.h",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task9\\vector.h",
               "RelativeDocumentMoniker": "task9\\vector.h",
@@ -366,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "yvals_core.h",
               "DocumentMoniker": "D:\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\include\\yvals_core.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\include\\yvals_core.h",
@@ -378,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "xlocbuf",
               "DocumentMoniker": "D:\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\include\\xlocbuf",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\include\\xlocbuf",
@@ -390,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "xmemory",
               "DocumentMoniker": "D:\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\include\\xmemory",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\include\\xmemory",
@@ -402,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "yvals.h",
               "DocumentMoniker": "D:\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\include\\yvals.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Programs\\visual Studio\\VC\\Tools\\MSVC\\14.40.33807\\include\\yvals.h",
@@ -414,7 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "task1.cpp",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task1\\task1.cpp",
               "RelativeDocumentMoniker": "task1\\task1.cpp",
@@ -426,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "myerrors.h",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task3\\myerrors.h",
               "RelativeDocumentMoniker": "task3\\myerrors.h",
@@ -438,7 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "myerrors.cpp",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task3\\myerrors.cpp",
               "RelativeDocumentMoniker": "task3\\myerrors.cpp",
@@ -450,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "task3.cpp",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task3\\task3.cpp",
               "RelativeDocumentMoniker": "task3\\task3.cpp",
@@ -458,12 +470,11 @@
               "RelativeToolTip": "task3\\task3.cpp",
               "ViewState": "AQIAAM0AAAAAAAAAAAAUwLUAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-24T06:44:41.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T06:44:41.473Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "task1.cpp",
               "DocumentMoniker": "D:\\univer\\lab2\\task1\\task1.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\lab2\\task1\\task1.cpp",
@@ -475,7 +486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "vector.h",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task2\\vector.h",
               "RelativeDocumentMoniker": "task2\\vector.h",
@@ -487,7 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "vector.cpp",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task2\\vector.cpp",
               "RelativeDocumentMoniker": "task2\\vector.cpp",
@@ -499,7 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "task2.cpp",
               "DocumentMoniker": "D:\\univer\\fund_labs\\fund_labs\\LAB3\\task2\\task2.cpp",
               "RelativeDocumentMoniker": "task2\\task2.cpp",
@@ -507,8 +518,7 @@
               "RelativeToolTip": "task2\\task2.cpp",
               "ViewState": "AQIAACYAAAAAAAAAAAAUwDMAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-23T11:40:02.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T11:40:02.041Z"
             }
           ]
         }

@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+п»ї#define _CRT_SECURE_NO_WARNINGS
 #include <ctype.h>
 #include <float.h>
 #include <math.h>
@@ -214,7 +214,7 @@ bool DeleteMail(Post* post, string post_id) {
 }
 
 void PrintAddress(Address* adr) {
-	printf("город  %s, улица %s, дом %d %s, квартира %d, почтовый индекс: %s",
+	printf("РіРѕСЂРѕРґ  %s, СѓР»РёС†Р° %s, РґРѕРј %d %s, РєРІР°СЂС‚РёСЂР° %d, РїРѕС‡С‚РѕРІС‹Р№ РёРЅРґРµРєСЃ: %s",
 		string_pr(adr->city), string_pr(adr->street), adr->house, string_pr(adr->building), adr->apartment, string_pr(adr->index));
 }
 
@@ -228,9 +228,9 @@ Mail* FindByPostID(string post_id, Post* post) {
 }
 
 void PrintMail(Mail* m) {
-	printf("Посылка весом %lf с почтовым идентификатором: %s. Время создания:%s. Время вручения:%s.", 
+	printf("РџРѕСЃС‹Р»РєР° РІРµСЃРѕРј %lf СЃ РїРѕС‡С‚РѕРІС‹Рј РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРј: %s. Р’СЂРµРјСЏ СЃРѕР·РґР°РЅРёСЏ:%s. Р’СЂРµРјСЏ РІСЂСѓС‡РµРЅРёСЏ:%s.", 
 		m->weight, string_pr(m->post_id), string_pr(m->time_created), string_pr(m->time_get));
-	printf("Адрес получателя:");
+	printf("РђРґСЂРµСЃ РїРѕР»СѓС‡Р°С‚РµР»СЏ:");
 	PrintAddress(&(m->address));
 	printf("\n");
 }
@@ -285,7 +285,7 @@ bool ScanMail(Mail* m) {
 	int house;
 	int count = 0;
 	char* a;
-	printf("Введите город:\n");
+	printf("Р’РІРµРґРёС‚Рµ РіРѕСЂРѕРґ:\n");
 	a = gets(city_s);
 	if (a == NULL) {
 		free(city_s);
@@ -298,7 +298,7 @@ bool ScanMail(Mail* m) {
 		free(temp);
 		return false;
 	}
-	printf("Введите улицу:\n");
+	printf("Р’РІРµРґРёС‚Рµ СѓР»РёС†Сѓ:\n");
 	a = gets(street_s);
 	if (a == NULL) {
 		free(city_s);
@@ -311,7 +311,7 @@ bool ScanMail(Mail* m) {
 		free(temp);
 		return false;
 	}
-	printf("Введите номер дома:\n");
+	printf("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РґРѕРјР°:\n");
 	count = scanf("%d", &house);
 	if (count != 1) {
 		free(city_s);
@@ -325,7 +325,7 @@ bool ScanMail(Mail* m) {
 		return false;
 	}
 	getchar();
-	printf("Введите адрес строения:\n");
+	printf("Р’РІРµРґРёС‚Рµ Р°РґСЂРµСЃ СЃС‚СЂРѕРµРЅРёСЏ:\n");
 	a = gets(building_s);
 	if (a == NULL) {
 		free(city_s);
@@ -338,7 +338,7 @@ bool ScanMail(Mail* m) {
 		free(temp);
 		return false;
 	}
-	printf("Введите номер квартиры:\n");
+	printf("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РєРІР°СЂС‚РёСЂС‹:\n");
 	count = scanf("%d", &apartment);
 	if (count != 1) {
 		free(city_s);
@@ -351,7 +351,7 @@ bool ScanMail(Mail* m) {
 		free(temp);
 		return false;
 	}
-	printf("Введите почтовый индекс:\n");
+	printf("Р’РІРµРґРёС‚Рµ РїРѕС‡С‚РѕРІС‹Р№ РёРЅРґРµРєСЃ:\n");
 	count = scanf("%s", index_s);
 	if (count != 1) {
 		free(city_s);
@@ -364,7 +364,7 @@ bool ScanMail(Mail* m) {
 		free(temp);
 		return false;
 	}
-	printf("Введите почтовый идентификатор:\n");
+	printf("Р’РІРµРґРёС‚Рµ РїРѕС‡С‚РѕРІС‹Р№ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ:\n");
 	count = scanf("%s", post_id_s);
 	if (count != 1) {
 		free(city_s);
@@ -377,7 +377,7 @@ bool ScanMail(Mail* m) {
 		free(temp);
 		return false;
 	}
-	printf("Введите вес посылки:\n");
+	printf("Р’РІРµРґРёС‚Рµ РІРµСЃ РїРѕСЃС‹Р»РєРё:\n");
 	count = scanf("%lf", &weight);
 	if (count != 1) {
 		free(city_s);
@@ -391,7 +391,7 @@ bool ScanMail(Mail* m) {
 		return false;
 	}
 
-	printf("Введите время создания:\n");
+	printf("Р’РІРµРґРёС‚Рµ РІСЂРµРјСЏ СЃРѕР·РґР°РЅРёСЏ:\n");
 	count = scanf("%s %s", time_created_s, temp);
 	if (count != 2) {
 		free(city_s);
@@ -407,7 +407,7 @@ bool ScanMail(Mail* m) {
 
 	strcat(time_created_s, " ");
 	strcat(time_created_s, temp);
-	printf("Введите время вручения:\n");
+	printf("Р’РІРµРґРёС‚Рµ РІСЂРµРјСЏ РІСЂСѓС‡РµРЅРёСЏ:\n");
 	count = scanf("%s %s", time_get_s, temp);
 	if (count != 2) {
 		free(city_s);
