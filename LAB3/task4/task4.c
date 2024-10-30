@@ -43,9 +43,12 @@ kErrors ProccessFlag(char flag, Post* post) {
         string s;
 
         if (!string_create(id, &s)) {
+            free(id);
             return MEM_ALLOC_ERR;
         }
         if (!ValidatePostId(s)) {
+            string_destroy(&s);
+            free(id);
             printf("Некорректный идентификатор\n");
             return INC_INP_DATA;
         }
@@ -58,9 +61,10 @@ kErrors ProccessFlag(char flag, Post* post) {
             PrintMail(m);
         }
         string_destroy(&s);
+        free(id);
         break;
     case 'a': 
-        printf("Введите данные посылки:\n");
+       printf("Введите данные посылки:\n");
        Mail m_a;
         if (!ScanMail(&m_a)) {
             printf("Некорректные данные\n");
@@ -80,10 +84,12 @@ kErrors ProccessFlag(char flag, Post* post) {
         scanf("%s", id_d);
         string s_d;
         if (!string_create(id_d, &s_d)) {
+            free(id_d);
             return MEM_ALLOC_ERR;
         }
         if (!ValidatePostId(s_d)) {
             printf("Некорректный идентификатор\n");
+            string_destroy(&s_d);
             free(id_d);
             return INC_INP_DATA;
         }
@@ -94,8 +100,8 @@ kErrors ProccessFlag(char flag, Post* post) {
             printf("Посылка успешно удалена\n");
         }
         free(id_d);
-        break;
         string_destroy(&s_d);
+        break;        
     case 'h':
         PrintHelp();
         break;
@@ -115,24 +121,18 @@ kErrors ProccessFlag(char flag, Post* post) {
             printf("Нет добавленных посылок\n");
             break;
         }
-        string t;
-        if (!string_create("-1", &t)) {
-            return MEM_ALLOC_ERR;
-        }
+       
 
         qsort(post->mails, post->mail_amount, sizeof(Mail), MailComparatorByCreationTime);
-        for (int i = 0; i < post->mail_amount; i++) {
-            if (string_comp(&(post->mails[i].post_id), &t) != 0) {
-                cur = ConvertToTm(post->mails[i].time_get);
-
-                PrintMail(&(post->mails[i]));                
-                if (difftime(mktime(now), mktime(&cur)) > 0) {
-                    printf("Посылка доставлена.\n");
-                }
-                else {
-                    printf("Посылка не доставлена.\n");
-                }
+        for (int i = 0; i < post->mail_amount; i++) {           
+            cur = ConvertToTm(post->mails[i].time_get);
+            PrintMail(&(post->mails[i]));                
+            if (difftime(mktime(now), mktime(&cur)) > 0) {
+                printf("Посылка доставлена.\n");
             }
+            else {
+                printf("Посылка не доставлена.\n");
+            }            
         }
         qsort(post->mails, post->mail_amount, sizeof(Mail), MailComparatorBase);
         break;

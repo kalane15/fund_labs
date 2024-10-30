@@ -171,21 +171,20 @@ bool AddMail(Post* post, Mail mail) {
 
 		post->mail_buf_size *= 2;
 	}
-	string t;
-	if (!string_create("-1", &t)) {
-		return false;
-	}
-	for (int i = 0; i < post->mail_buf_size; i++) {
-		
-		if (i >= post->mail_amount || string_comp(&(post->mails[i].post_id), &t) == 0) {
-			post->mails[i] = mail;
-			post->mail_amount++;
-			break;
-		}
-	}
-	string_destroy(&t);
+	
+	post->mails[post->mail_amount++] = mail;	
 	qsort(post->mails, post->mail_amount, sizeof(Mail), MailComparatorBase);
 	return true;
+}
+
+void DestroyMail(Mail* m) {
+	string_destroy(&m->post_id);
+	string_destroy(&m->time_created);
+	string_destroy(&m->time_get);
+	string_destroy(&m->address.building);
+	string_destroy(&m->address.city);
+	string_destroy(&m->address.index);
+	string_destroy(&m->address.street);
 }
 
 bool DeleteMail(Post* post, string post_id) {
@@ -193,13 +192,18 @@ bool DeleteMail(Post* post, string post_id) {
 	if (m == NULL) {
 		return false;
 	}
-
-	string s;
-	if (!string_create("-1", &s)) {
-		return false;
+	
+	int i;
+	for (i = 0; i < post->mail_amount; i++) {
+		if (string_comp(&(post->mails[i].post_id), &post_id) == 0) {
+			DestroyMail(&(post->mails[i]));
+			break;
+		}
 	}
-	string_destroy(&(m->post_id));
-	string_copy(&m->post_id, &s);
+	post->mail_amount--;
+	for (; i < post->mail_amount; i++) {
+		post->mails[i] = post->mails[i + 1];
+	}
 	return true;
 }
 
@@ -218,19 +222,11 @@ Mail* FindByPostID(string post_id, Post* post) {
 }
 
 void PrintMail(Mail* m) {
-	string temp;
-	if (!string_create("-1", &temp)) {
-		return;
-	}
-	if (string_comp(&(m->post_id), &temp) == 0) {
-		return;
-	}
 	printf("Посылка весом %lf с почтовым идентификатором: %s. Время создания:%s. Время вручения:%s.", 
 		m->weight, string_pr(m->post_id), string_pr(m->time_created), string_pr(m->time_get));
 	printf("Адрес получателя:");
 	PrintAddress(&(m->address));
 	printf("\n");
-	string_destroy(&temp);
 }
 
 
