@@ -130,12 +130,14 @@
     <ClCompile Include="mail.c" />
     <ClCompile Include="myerrors.c" />
     <ClCompile Include="mystring.c" />
+    <ClCompile Include="parsers.c" />
     <ClCompile Include="task4.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mail.h" />
     <ClInclude Include="myerrors.h" />
     <ClInclude Include="mystring.h" />
+    <ClInclude Include="parsers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

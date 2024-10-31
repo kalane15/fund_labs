@@ -1,2 +1,0 @@
-D:\univer\fund_labs\fund_labs\LAB3\x64\Debug\task4.exe.lastcodeanalysissucceeded
-D:\univer\fund_labs\fund_labs\LAB3\task4\x64\Debug\NativeCodeAnalysis.read.1.tlog

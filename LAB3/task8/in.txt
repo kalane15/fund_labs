@@ -1,0 +1,1 @@
+Add(-x^6-x^3-5, x^5+8x);       %    awpdokwo

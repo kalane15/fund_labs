@@ -1,46 +1,20 @@
 ﻿  mail.c
 D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(182,54): warning C4090: функция: разные квалификаторы "const"
 D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(182,54): warning C4113: "int (__cdecl *)(void *,void *)" отличается в списках параметров от "_CoreCrtNonSecureSearchSortCompareFunction"
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(289,6): warning C4013: gets: нет определения; предполагается "extern" с возвратом типа "int"
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(289,4): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(302,4): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(329,4): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
-  myerrors.c
-  mystring.c
-D:\univer\fund_labs\fund_labs\LAB3\task4\mystring.c(22,13): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-  task4.c
-D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(126,61): warning C4090: функция: разные квалификаторы "const"
-D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(126,61): warning C4113: "int (__cdecl *)(void *,void *)" отличается в списках параметров от "_CoreCrtNonSecureSearchSortCompareFunction"
-D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(137,61): warning C4090: функция: разные квалификаторы "const"
-D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(137,61): warning C4113: "int (__cdecl *)(void *,void *)" отличается в списках параметров от "_CoreCrtNonSecureSearchSortCompareFunction"
-D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(151,41): warning C4047: !=: "int (__cdecl *)(void)" отличается по уровням косвенного обращения от "int"
-D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(150,10): warning C4101: c: неиспользованная локальная переменная
-D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(157,13): warning C4101: nM: неиспользованная локальная переменная
-D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(157,17): warning C4101: ny: неиспользованная локальная переменная
-D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(157,29): warning C4101: ns: неиспользованная локальная переменная
-D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(157,9): warning C4101: nd: неиспользованная локальная переменная
-D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(157,25): warning C4101: nm: неиспользованная локальная переменная
-D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(157,21): warning C4101: nh: неиспользованная локальная переменная
-  Выполнение Code Analysis для C/C++...
-  Создание кода...
+D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(294,6): warning C4013: gets: нет определения; предполагается "extern" с возвратом типа "int"
+D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(294,4): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
+D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(307,4): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
+D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(320,4): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
+D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(321,19): warning C4013: StringToInt: нет определения; предполагается "extern" с возвратом типа "int"
+D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(333,4): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
+D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(346,4): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
+D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(359,4): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
+D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(372,4): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
+D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(385,4): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
+D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(386,19): warning C4013: ParseDouble: нет определения; предполагается "extern" с возвратом типа "int"
+D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(399,4): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
+D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(414,4): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
+D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(455,36): warning C4244: функция: преобразование "__int64" в "int", возможна потеря данных
+D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(455,53): warning C4244: функция: преобразование "__int64" в "int", возможна потеря данных
 D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(72,1): warning C4715: ValidatePostId: значение возвращается не при всех путях выполнения
   task4.vcxproj -> D:\univer\fund_labs\fund_labs\LAB3\x64\Debug\task4.exe
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(41): warning C6031: Возвращаемое значение пропущено: "sscanf".
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(327): warning C6031: Возвращаемое значение пропущено: "getchar".
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(275): warning C6001: Использование неинициализированной памяти "city_s".
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(276): warning C6001: Использование неинициализированной памяти "street_s".
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(277): warning C6001: Использование неинициализированной памяти "building_s".
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(278): warning C6387: "index_s" может быть равен "0":  это не соответствует спецификации функции "strcpy". 
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(278): warning C6001: Использование неинициализированной памяти "index_s".
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(279): warning C6387: "post_id_s" может быть равен "0":  это не соответствует спецификации функции "strcpy". 
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(279): warning C6001: Использование неинициализированной памяти "post_id_s".
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(280): warning C6387: "time_created_s" может быть равен "0":  это не соответствует спецификации функции "strcpy". 
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(280): warning C6001: Использование неинициализированной памяти "time_created_s".
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(281): warning C6387: "time_get_s" может быть равен "0":  это не соответствует спецификации функции "strcpy". 
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(390): warning C6001: Использование неинициализированной памяти "temp".
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(408): warning C6387: "time_created_s" может быть равен "0":  это не соответствует спецификации функции "strcat". Самое раннее расположение, где это могло произойти, см. в строке 280
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(409): warning C6387: "temp" может быть равен "0":  это не соответствует спецификации функции "strcat". 
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(424): warning C6387: "time_get_s" может быть равен "0":  это не соответствует спецификации функции "strcat". Самое раннее расположение, где это могло произойти, см. в строке 281
-D:\univer\fund_labs\fund_labs\LAB3\task4\mail.c(460): warning C6031: Возвращаемое значение пропущено: "sscanf".
-D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(42): warning C6031: Возвращаемое значение пропущено: "scanf".
-D:\univer\fund_labs\fund_labs\LAB3\task4\task4.c(84): warning C6031: Возвращаемое значение пропущено: "scanf".

@@ -53,6 +53,17 @@ stroeine u
 11:09:2001 13:30:32
 30:10:2024 13:25:32
 
+vladivostok
+ulica centralnaya
+85
+stroeine kakoeto
+17
+113152
+13121151111111
+0.3
+30:10:2001 13:25:32
+11:09:2021 13:30:32
+
 
 incorrect input:
 vladivostok
@@ -68,7 +79,7 @@ stroeine u
 
 vladi vostok
 vald street
-p
+4
 str oeine u
 17
 113152
@@ -76,3 +87,15 @@ str oeine u
 0,2
 30:10:2024 13:25:32
 11:09:2001 13:30:32
+
+vladi vostok
+vald street
+-8
+str oeine u
+17
+113152
+13121151111118
+0,2
+30:10:2024 13:25:32
+11:09:2001 13:30:32
+

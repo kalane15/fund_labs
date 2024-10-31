@@ -1,2 +1,6 @@
-﻿  task8.cpp
+﻿  task8.c
+D:\univer\fund_labs\fund_labs\LAB3\task8\task8.c(238,15): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\univer\fund_labs\fund_labs\LAB3\task8\task8.c(508,15): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\univer\fund_labs\fund_labs\LAB3\task8\task8.c(249,1): warning C4715: CheckString: значение возвращается не при всех путях выполнения
+D:\univer\fund_labs\fund_labs\LAB3\task8\task8.c(500,1): warning C4715: parseFile: значение возвращается не при всех путях выполнения
   task8.vcxproj -> D:\univer\fund_labs\fund_labs\LAB3\x64\Debug\task8.exe

@@ -27,6 +27,9 @@
     <ClCompile Include="mail.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="parsers.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="myerrors.h">
@@ -36,6 +39,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="mail.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="parsers.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>
