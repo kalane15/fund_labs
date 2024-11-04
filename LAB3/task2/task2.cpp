@@ -4,7 +4,7 @@
 #include <math.h>
 #include <stdbool.h>
 #include <stdlib.h>
-
+#include <math.h>
 #include <climits>
 #include <cstring>
 #include <locale>
@@ -43,6 +43,13 @@ kErrors norma1(vector* v, int dimensions, double* out) {
 	for (int i = 0; i < v->dimensions; i++) {
 		res = fabs(v->coordinates[i]) > res ? fabs(v->coordinates[i]) : res;
 	}
+
+	if (!isinf(res)) {
+		return ERR_OVERFLOW;
+	}
+	else if (!isnormal(res)) {
+		return INC_ARGS;
+	}
 	*out = res;
 	return SUCCESS;
 }
@@ -53,6 +60,13 @@ kErrors norma2(vector* v, int dimensions, double* out) {
 
 	for (int i = 0; i < v->dimensions; i++) {
 		a += pow(v->coordinates[i], p);
+	}
+
+	if (!isinf(a)) {
+		return ERR_OVERFLOW;
+	}
+	else if (!isnormal(a)) {
+		return INC_ARGS;
 	}
 
 	a = pow(a, 1.0 / p);

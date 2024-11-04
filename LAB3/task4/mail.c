@@ -301,6 +301,7 @@ bool ScanMail(Mail* m) {
 		free(time_created_s);
 		free(time_get_s);
 		free(temp);
+		free(ost);
 		return false;
 	}
 	printf("Введите улицу:\n");
@@ -314,6 +315,7 @@ bool ScanMail(Mail* m) {
 		free(time_created_s);
 		free(time_get_s);
 		free(temp);
+		free(ost);
 		return false;
 	}
 	printf("Введите номер дома:\n");
@@ -327,6 +329,7 @@ bool ScanMail(Mail* m) {
 		free(time_created_s);
 		free(time_get_s);
 		free(temp);
+		free(ost);
 		return false;
 	}
 	printf("Введите адрес строения:\n");
@@ -340,6 +343,7 @@ bool ScanMail(Mail* m) {
 		free(time_created_s);
 		free(time_get_s);
 		free(temp);
+		free(ost);
 		return false;
 	}
 	printf("Введите номер квартиры:\n");
@@ -353,6 +357,7 @@ bool ScanMail(Mail* m) {
 		free(time_created_s);
 		free(time_get_s);
 		free(temp);
+		free(ost);
 		return false;
 	}
 	printf("Введите почтовый индекс:\n");
@@ -360,6 +365,7 @@ bool ScanMail(Mail* m) {
 	if (a == NULL) {
 		free(city_s);
 		free(street_s);
+		free(ost);
 		free(building_s);
 		free(index_s);
 		free(post_id_s);
@@ -375,6 +381,7 @@ bool ScanMail(Mail* m) {
 		free(street_s);
 		free(building_s);
 		free(index_s);
+		free(ost);
 		free(post_id_s);
 		free(time_created_s);
 		free(time_get_s);
@@ -390,6 +397,7 @@ bool ScanMail(Mail* m) {
 		free(index_s);
 		free(post_id_s);
 		free(time_created_s);
+		free(ost);
 		free(time_get_s);
 		free(temp);
 		return false;
@@ -403,6 +411,7 @@ bool ScanMail(Mail* m) {
 		free(building_s);
 		free(index_s);
 		free(post_id_s);
+		free(ost);
 		free(time_created_s);
 		free(time_get_s);
 		free(temp);
@@ -417,6 +426,7 @@ bool ScanMail(Mail* m) {
 		free(street_s);
 		free(building_s);
 		free(index_s);
+		free(ost);
 		free(post_id_s);
 		free(time_created_s);
 		free(time_get_s);
@@ -449,6 +459,7 @@ bool ScanMail(Mail* m) {
 	free(time_created_s);
 	free(time_get_s);
 	free(temp);
+	free(ost);
 	if (status != true) {
 		return false;
 	}

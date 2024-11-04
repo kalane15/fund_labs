@@ -35,11 +35,15 @@ kErrors ProccessFlag(char flag, Post* post) {
     switch (flag) {
     case 'g':
         printf("Введите идентификатор:\n");
-        char* id = (char*)malloc(17);
+        char* id = (char*)malloc(BUFSIZ);
         if (id == NULL) {
             return MEM_ALLOC_ERR;
         }
-        scanf("%s", id);
+        int cc = scanf("%s", id);
+        if (cc != 1) {
+            free(id);
+            return INC_INP_DATA;
+        }
         string s;
 
         if (!string_create(id, &s)) {

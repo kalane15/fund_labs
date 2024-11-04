@@ -35,17 +35,23 @@ kErrors ProccessError(kErrors error) {
 		case INC_INP_DATA:
 			printf("Incorrect input data\n");
 			break;
-		case NESTED_COMMENTS:
-			printf("Nested commentaries\n");
+		case INC_COMMENTS:
+			printf("Incorrect commentaries\n");
 			break;
 		case UNKNOWN_FUNC:
-			printf("Nested commentaries\n");
+			printf("Unknown function\n");
 			break;
 		case NO_POINT_COMMA:
 			printf("No semicolon found\n");
 			break;
 		case EXTRA_CHARACTERS:
 			printf("Extra charactes in line\n");
+			break;
+		case INC_SYNTAX:
+			printf("Incorrect syntax\n");
+			break;
+		case INC_DIV:
+			printf("Div result coefficients must be integer\n");
 			break;
 	}
 	return error;

@@ -21,6 +21,9 @@
     <ClCompile Include="myerrors.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="mylib.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".clang-format">
@@ -29,6 +32,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="myerrors.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="mylib.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>

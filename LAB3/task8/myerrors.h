@@ -8,9 +8,11 @@ typedef enum kErrors {
 	INC_FLAG,
 	INC_FILE,
 	INC_INP_DATA,
-	NESTED_COMMENTS,
+	INC_COMMENTS,
 	UNKNOWN_FUNC,
 	NO_POINT_COMMA,
-	EXTRA_CHARACTERS
+	EXTRA_CHARACTERS,
+	INC_SYNTAX,
+	INC_DIV
 } kErrors;
 kErrors ProccessError(kErrors error);
