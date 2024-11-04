@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="myerrors.c" />
     <ClCompile Include="mylib.c" />
+    <ClCompile Include="polynomial.c" />
     <ClCompile Include="task8.c" />
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +138,7 @@
   <ItemGroup>
     <ClInclude Include="myerrors.h" />
     <ClInclude Include="mylib.h" />
+    <ClInclude Include="polynomial.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

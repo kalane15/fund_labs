@@ -1,1 +1,10 @@
-Cmps(x^3 - 3x^2 +7, x^2+1);
+Add(x^2+5x+1); %comm
+Cmps(x+1);
+Diff();
+Eval(1.5);
+Mult(-3x^4+2x^2, x^2+1); %comm;
+[comm
+comm
+another one
+]
+Sub(2x^8-5x^5+3x-7, 2x);

@@ -1,5 +1,4 @@
 ﻿  task8.c
-D:\univer\fund_labs\fund_labs\LAB3\task8\task8.c(132,6): warning C4013: copyPolynoms: нет определения; предполагается "extern" с возвратом типа "int"
-D:\univer\fund_labs\fund_labs\LAB3\task8\task8.c(312,12): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-D:\univer\fund_labs\fund_labs\LAB3\task8\task8.c(654,12): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\univer\fund_labs\fund_labs\LAB3\task8\task8.c(44,12): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\univer\fund_labs\fund_labs\LAB3\task8\task8.c(254,15): warning C4013: copyPolynoms: нет определения; предполагается "extern" с возвратом типа "int"
   task8.vcxproj -> D:\univer\fund_labs\fund_labs\LAB3\x64\Debug\task8.exe

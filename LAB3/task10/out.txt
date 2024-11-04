@@ -1,8 +1,7 @@
 Tree number 1:
 A
-  B
-   
-  h
-  ,
-  C
+  O
+    O
+    O
+      [
 

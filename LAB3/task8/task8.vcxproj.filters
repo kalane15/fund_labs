@@ -24,6 +24,9 @@
     <ClCompile Include="mylib.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="polynomial.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".clang-format">
@@ -35,6 +38,9 @@
       <Filter>Исходные файлы</Filter>
     </ClInclude>
     <ClInclude Include="mylib.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="polynomial.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>
